@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:odev/ui/view/hafta_1/hafta_1_view.dart';
+import 'package:odev/core/constants/app_sizes.dart';
 import 'package:odev/ui/view/hafta_1/state_management/sonuc_page.dart';
 
 
-class Page1 extends StatefulWidget {
-  const Page1({super.key});
+class StageManagementPage extends StatefulWidget {
+  const StageManagementPage({super.key});
 
   
   @override
-  State<Page1> createState() => Page1State();
+  State<StageManagementPage> createState() => StageManagementPageState();
 }
 
-class Page1State extends State<Page1> {
+
+class StageManagementPageState extends State<StageManagementPage> {
   int counter = 0; //Sayaç başlangıç değeri
   @override
 
@@ -72,7 +73,7 @@ class Page1State extends State<Page1> {
               child: ElevatedButton(
                       child: const Text("Sonuc Gor"),
                       onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => Page3(sonuc: counter)));// Sayacı Page3'e gönderme
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SonucPage(sonuc: counter)));// Sayacı Page3'e gönderme
                     },
                 ),
               ),

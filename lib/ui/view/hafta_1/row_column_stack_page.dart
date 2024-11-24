@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 
-class Page2 extends StatelessWidget {
-  const Page2 ({super.key});
+class RowColumnStackPage extends StatelessWidget {
+  const RowColumnStackPage({super.key});
   
   @override
 
@@ -11,12 +11,6 @@ class Page2 extends StatelessWidget {
     return Scaffold(
     appBar: AppBar(
       title: const Text("Row-Column-Stack Kullanimi"),
-      leading: IconButton(
-        icon: const Icon(Icons.arrow_back),//AppBar'a anasayfaya dönmesi için geri dönüş tuşu veriyoruz
-        onPressed: (){
-          Navigator.pop(context);//bir önceki sayfaya geri dönmesini saglar
-        },
-        ),//Sayfa Başlığı
     ),
 
     body: Stack(
