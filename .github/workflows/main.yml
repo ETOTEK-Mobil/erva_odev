@@ -1,9 +1,7 @@
 # File: .github/workflows/template-sync.yml
 
-on: 
-  push:
-    # only trigger on branches, not on tags
-    branches: '**'
+on:
+
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
