@@ -1,6 +1,6 @@
 name: odev
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
@@ -9,11 +9,25 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  webview_flutter: ^4.10.0
+  cached_network_image: ^3.4.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+  build_runner: ^2.4.13
+  flutter_gen: ^5.8.0
+
+# pubspec.yaml
+# ...
+
+flutter_gen:
+  output: lib/gen/ # Optional (default: lib/gen/)
+  line_length: 80 # Optional (default: 80)
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/images/cropped-etotek-Photoroom.png
